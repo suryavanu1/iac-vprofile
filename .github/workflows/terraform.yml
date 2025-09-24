@@ -76,7 +76,7 @@ jobs:
 
         - name: Install ingress controller
           if: steps.apple.outcome == 'success' steps.getconfig.outcome == 'success'
-          run: |
+          run: 
             kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/aws/deploy.yaml
             
 
